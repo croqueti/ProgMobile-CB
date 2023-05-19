@@ -1,0 +1,18 @@
+8.A média aritmética de dois ou mais termos é o quociente do resultado da divisão da soma dos números dados pela quantidade de números somados. Elabore um algoritmo que leia as 4 notas de um aluno e escreva sua média aritmética.
+
+15. Em uma pequena loja de eletrônica são vendidos resistores, diodos e transistores. Seus
+Os preços são de R $0,70, R $0,80 e R$0,95, respectivamente. Têm-se os preços unitários de cada tipo
+de peça e sabe-se que sobre estes preços incidem descontos de 5% para resistores, 6% para
+diodos e 9% para transistores. Elabore um programa que leia o nome do cliente e as quantidades
+de cada item comprado; e escreva o valor total de desconto e o valor líquido a ser pago pela
+compra.
+
+17. Leia a idade de uma pessoa e informe se ela já chegou à maioridade. Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
+
+18. Construa um algoritmo que leia um número inteiro A é um número inteiro B. Verifique qual dos dois números é maior e o escreva.
+
+33. Construa um algoritmo que leia um número inteiro e, se ele for positivo, escreva uma
+mensagem que informe se este número é ou não divisível por 2.
+
+35. Construa um algoritmo que leia três números inteiros e escreva-os em ordem decrescente.
+
