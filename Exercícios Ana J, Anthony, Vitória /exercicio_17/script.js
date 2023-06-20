@@ -4,25 +4,13 @@ meuFormulario.addEventListener("submit", function(event) {
   somar();
 });
 
-function capturarPrimeiroNumeroInteiro() {
-  const primeiro_numero_inteiro = Number(document.getElementById("primeiro_numero_inteiro").value);
-  return primeiro_numero_inteiro;
-}
+function verificarMaioridade() {
+  var idade = parseInt(document.getElementById("idade").value);
+  var anosFaltantes = 18 - idade;
 
-function capturarSegundoNumeroInteiro() {
- const segundo_numero_inteiro = Number(document.getElementById("segundo_numero_inteiro").value); 
- return segundo_numero_inteiro;
-}
-
-
-function somar() {
-  let primeiro_numero_inteiro = capturarPrimeiroNumeroInteiro();
-  let segundo_numero_inteiro = capturarSegundoNumeroInteiro();
-  let resultado_soma = primeiro_numero_inteiro + segundo_numero_inteiro;
-  imprimirResultadoNaTela(resultado_soma);
-}
-
-
-function imprimirResultadoNaTela(resultado_soma) {
-  document.getElementById("resultado_soma").value = resultado_soma;
+  if (idade >= 18) {
+    document.getElementById("mensagem").textContent = "Parabéns! Você atingiu a maioridade!";
+  } else {
+    document.getElementById("mensagem").textContent = "Desculpe, você ainda não atingiu a maioridade. Faltam " + anosFaltantes + " anos.";
+  }
 }
