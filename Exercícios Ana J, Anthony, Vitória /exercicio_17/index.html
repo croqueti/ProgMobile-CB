@@ -11,19 +11,17 @@
 		17. Leia a idade de uma pessoa e informe se ela já chegou à maioridade. Se ela ainda não chegou,
 		informe quantos anos faltam para a maioridade.
 	-->
-	<h1>Calcula a soma de dois números inteiros</h1>
+	<h1>Digite sua idade</h1>
 	<form id="meu-formulario">
-		<label for="primeiro_numero_inteiro">Primerio Número Inteiro:</label>
-		<input type="text" id="primeiro_numero_inteiro"><br>
+		<label for="idadel">Sua Idade Atual:</label>
+		<input type="text" id="idade"><br>
+	
+		<button onclick="verificarMaioridade()">Verificar</button>
+		<p id="mensagem"></p>
 		<br>
-		<label for="segundo_numero_inteiro">Segundo Número Inteiro:</label>
-		<input type="text" id="segundo_numero_inteiro"><br>
-		<br>
-		<label for="resultado_soma">Resultado da Soma:</label>
-		<input type="text" id="resultado_soma" disabled><br>
-		<br>
-		<button type="submit" id="submit-btn">Enviar</button>		
-		<!-- <button type="submit" onclick="executar()">Enviar</button> -->
+
+		<!--FOOTER -->
+		<div class="label2"></div>
 	</form>	
 	<script src="script.js"></script>
 </body>
