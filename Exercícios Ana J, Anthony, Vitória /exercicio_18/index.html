@@ -2,29 +2,28 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Formulário</title>
+	<title>Verificar o maior número</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+	<body>
 	<!--
 		18. Construa um algoritmo que leia um número inteiro A e um número inteiro B. Verifique qual
 		dos dois números é maior e o escreva.
 	-->
-	<h1>Calcula a soma de dois números inteiros</h1>
-	<form id="meu-formulario">
-		<label for="primeiro_numero_inteiro">Primerio Número Inteiro:</label>
-		<input type="text" id="primeiro_numero_inteiro"><br>
-		<br>
-		<label for="segundo_numero_inteiro">Segundo Número Inteiro:</label>
-		<input type="text" id="segundo_numero_inteiro"><br>
-		<br>
-		<label for="resultado_soma">Resultado da Soma:</label>
-		<input type="text" id="resultado_soma" disabled><br>
-		<br>
-		<button type="submit" id="submit-btn">Enviar</button>		
-		<!-- <button type="submit" onclick="executar()">Enviar</button> -->
-	</form>	
+		<h1>Verificar o maior número</h1>
+			<form id="meu-formulario">
+				
+			<label for="numeroA">Digite o valor de A:</label>
+			<input type="text" id="numeroA"><br><br>
+
+			<label for="numeroB">Digite o valor de B:</label>
+			<input type="text" id="numeroB"><br><br>
+
+			<button onclick="verificarMaior()">Verificar</button><br><br>
+
+			<div id="resultado"></div>
+		</form>	
 	<script src="script.js"></script>
-</body>
+	</body>
 </html>
