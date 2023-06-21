@@ -4,25 +4,30 @@ meuFormulario.addEventListener("submit", function(event) {
   somar();
 });
 
-function capturarPrimeiroNumeroInteiro() {
-  const primeiro_numero_inteiro = Number(document.getElementById("primeiro_numero_inteiro").value);
-  return primeiro_numero_inteiro;
+ // Leitura dos números inteiros A e B
+function capturarnumeroA() {
+  const numeroA = Number(document.getElementById("numeroA").value);
+  return numeroA;
 }
 
-function capturarSegundoNumeroInteiro() {
- const segundo_numero_inteiro = Number(document.getElementById("segundo_numero_inteiro").value); 
- return segundo_numero_inteiro;
+function capturarnumeroB() {
+  const numeroB = Number(document.getElementById("numeroB").value);
+  return numeroB;
 }
 
+function verificarMaior() {
+  // Verificação do maior número
+  let maior;
+  if (numeroA > numeroB) {
+      maior = numeroA;
+  } else if (numeroB > numeroA) {
+      maior = numeroB;
+  } else {
+      document.getElementById("resultado").innerHTML = "Os números são iguais.";
+      return;
+  }
 
-function somar() {
-  let primeiro_numero_inteiro = capturarPrimeiroNumeroInteiro();
-  let segundo_numero_inteiro = capturarSegundoNumeroInteiro();
-  let resultado_soma = primeiro_numero_inteiro + segundo_numero_inteiro;
-  imprimirResultadoNaTela(resultado_soma);
+  // Impressão do maior número
+  document.getElementById("resultado").innerHTML = "O maior número é " + maior + ".";
 }
 
-
-function imprimirResultadoNaTela(resultado_soma) {
-  document.getElementById("resultado_soma").value = resultado_soma;
-}
