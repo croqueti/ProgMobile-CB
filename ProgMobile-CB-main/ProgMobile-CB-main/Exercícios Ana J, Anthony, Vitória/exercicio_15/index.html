@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>(´▽｀)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="style.css">
+	<!--Icone WebSite-->
+	<link rel="shortcut icon" href="favicon_io (1)/favicon.ico" type="image/x-image">
+	</head>
+<body>
+	<!--
+		15. Em uma pequena loja de eletrônica são vendidos resistores, diodos e transistores. Seus
+		Os preços são de R $0,70, R $0,80 e R$0,95, respectivamente. Têm-se os preços unitários de cada tipo
+		de peça e sabe-se que sobre estes preços incidem descontos de 5% para resistores, 6% para
+		diodos e 9% para transistores. Elabore um programa que leia o nome do cliente e as quantidades
+		de cada item comprado; e escreva o valor total de desconto e o valor líquido a ser pago pela
+		compra.
+	-->
+	<form id="meu-formulario">
+		<h1>Compra de Componentes Eletrônicos</h1>
+
+		<label for="nomeCliente">Nome do Cliente:</label>
+		<input type="text" id="nomeCliente" name="nomeCliente">
+	  
+		<label for="quantidadeResistores">Quantidade de Resistores:</label>
+		<input type="text" id="quantidadeResistores" name="quantidadeResistores">
+	  
+		<label for="quantidadeDiodos">Quantidade de Diodos:</label>
+		<input type="text" id="quantidadeDiodos" name="quantidadeDiodos">
+	  
+		<label for="quantidadeTransistores">Quantidade de Transistores:</label>
+		<input type="text" id="quantidadeTransistores" name="quantidadeTransistores">
+	  
+		<button onclick="calcularCompra()">Verificar</button>
+	  
+		<p id="resultado"></p>
+
+			<!--FOOTER -->
+			<div class="label2">
+				<h3>Criado by: &star;</h3>
+			<div class="photos">
+				<img src="Design sem nome (1).png" alt="Ana"  width="50" height="50">
+				<img src="Design sem nome.png" alt="Anthony"  width="50" height="50">
+				<img src="vitoria.png" alt="Vitória" width="50" height="50">
+			</div>
+		</div>
+	</form>	
+	<script src="script.js"></script>
+</body>
+</html>
+
+
