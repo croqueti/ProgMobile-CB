@@ -15,23 +15,22 @@
 		de um aluno e escreva sua média aritmética.
 	-->
 	<form id="meu-formulario">
-		<h1>Calcule a Média</h1>
-		<label for="primeiro_numero_inteiro">Digite sua Primeira Nota: </label>
-		<input type="text" id="primeiro_numero_inteiro"><br>
-		<br>
-		<label for="segundo_numero_inteiro">Digite sua Segunda Nota:</label>
-		<input type="text" id="segundo_numero_inteiro"><br>
-		<br>
-		<br>
-		<label for="terceiro_numero_inteiro">Digite sua Terceira nota:</label>
-		<input type="text" id="terceiro_numero_inteiro"><br>
-		<br>
-		<br>
-		<label for="quarto_numero_inteiro">Digite sua Quarta Nota: </label>
-		<input type="text" id="quarto_numero_inteiro"><br>
-		<br>
-		<br>
-		<button type="button" onclick="imprimirResultadoNaTela()">Verificar</button><br><br>
+		  <h1>Calcule a Média</h1>
+
+			<label for="nota1">Digite a Primeira Nota: </label>
+				<input type="text" id="nota1"><br><br>
+
+			<label for="nota2">Digite a Segunda Nota:</label>
+				<input type="text" id="nota2"><br><br>
+
+			<label for="nota3">Digite a Terceira Nota:</label>
+				<input type="text" id="nota3"><br><br>
+
+			<label for="nota4">Digite a Quarta Nota:</label>
+				<input type="text" id="nota4"><br><br>
+
+			<p>A média aritmética é: <span id="resultado_media"></span></p>
+				<button onclick="calcularMedia()">Verificar</button><br><br>
 
 			<!--FOOTER -->
 			<div class="label2">
@@ -43,6 +42,7 @@
 			</div>
 		</div>
 	</form>	
+
 	<script src="script.js"></script>
 </body>
 </html>
